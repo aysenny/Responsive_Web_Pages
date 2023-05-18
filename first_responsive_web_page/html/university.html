@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" >
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+   <style>
+    * {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+     /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  
+img { 
+  opacity: 1; 
+  transition: opacity 300ms linear;
+} 
+img:hover { 
+  opacity: 0.1; 
+} 
+.text-container {
+  padding: 1em;
+  position: relative;
+  padding-bottom: 3em;
+}
+.text-container .read-more {
+  position: absolute;
+  bottom: .5em;
+ }
+input.read-more-toggle { 
+  display: none;
+ }
+.read-more span { display: block;
+    color: rgb(125, 29, 29);
+    cursor: pointer;
+    text-decoration: underline; 
+    }
+.read-more span:last-child {
+   display: none;
+ }
+input:checked + .read-more span:last-child { 
+  display: block; 
+}
+input:checked + .read-more span:first-child { 
+  display: none;
+ }
+.text-content {
+  overflow: hidden;
+  line-height: 1.5;
+}
+.read-more + .text-content {
+  max-height: 3em;
+  transition: max-height 1s;
+}
+input:checked + .read-more + .text-content {
+  max-height: 50em;
+}
+
+   </style>
+  
+    
+</head>
+<body>
+
+    <div class="header" style=" background: url('css/images/estu.jpeg')  no-repeat; background-size: 100% 100%; height:auto;">
+        <h1 style="text-align:center; color: rgb(247, 252, 255); text-shadow: 2px 2px rgb(163, 71, 71); "> Eskişehir Technical University</h1>
+    </div>
+    <div class="row" >
+      <div class="col-3 ">
+    <nav class="navbar  bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <div class="row-1">
+        <a class="navbar-brand" href="#">
+          <img src="css/images/estu_logo.jpg" class="thumbnail"alt="logo" style="width:100px;" >
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link  " href="home.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link " href="university.html">University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="academics.html">Academics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="students.html">Student</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  " href="campus.html">Campus Life</a>
+            </li>
+          
+          </ul>
+        </nav>
+      </div>
+       
+      
+      <div class="row"></div>
+      <div class="col-9 " style="background-size: 15px;">
+                 <div class="container">
+                      <h3 style="text-align:center; color:rgb(0, 0, 0); text-shadow: 2px 2px rgb(196, 196, 196);">Information About Estu</h3>
+                      <ul>
+                        <li> <p style="font-size: 1.2em;"> <strong> <i> About Us </i></strong> </p>
+                            <div class="text-container">
+                                <input type=checkbox id=more-text-toggle-1 class=read-more-toggle />
+                                <label class="read-more" for="more-text-toggle-1">
+                                  <span>Read more</span>
+                                  <span>Read less</span>
+                                </label>
+                                <div class="text-content short-text">
+                                   <p> Eskişehir Technical University, established by Law No. 7141 published in the Official Gazette No. 30425 dated May 18, 2018, consists of 5 Faculties, 2 Vocational Schools, 1 College and 3 Institutes and 4 Research and Application Centers in 3 campuses located in the center of Eskişehir, which is a science, culture and youth city at the same time. Eskişehir Technical University works to prepare its students as the most equipped and competitive individuals for the future in creative and dynamic educational environments with competent teaching staff who follow the developments in their field and share all their time with their students in its units with a strong infrastructure where it conducts educational and research activities. The operation of the international Hasan Polatkan Airport, located on the 2 September campus of our University, is carried out by our Faculty of Aeronautics and Astronautics. There are international flights to Hasan Polatkan Airport operated by different airline companies on various days of the week.</p>
+                                </div>
+                              </div>
+                     </li>
+                     <li>
+                      <p style="font-size: 1.2em;"> <strong> <i> Obtaining Information </i></strong> </p>
+                        <div class="text-container">
+                            <input type=checkbox id=more-text-toggle-2 class=read-more-toggle />
+                            <label class="read-more" for="more-text-toggle-2">
+                              <span>Read more</span>
+                              <span>Read less</span>
+                            </label>
+                            <div class="text-content short-text">
+                               <p> Eskişehir Technical University Rectorate, 09.10.2003 date and Numbered 4982 of the Regulation on the Implementation of the Right to Information Law 8. In accordance with the Article, the Rectorate has assigned the Directorate of Special Items to ensure that the public can effectively exercise its right to information and to evaluate applications for obtaining information to be made in accordance with this Jul..<br> </p>
+                            </div>
+                          </div>
+                     </li>
+                     <li>
+                      <p style="font-size: 1.2em;"> <strong> <i>Department of Student Affairs </i></strong> </p>
+                        <div class="text-container">
+                            <input type=checkbox id=more-text-toggle-3 class=read-more-toggle />
+                            <label class="read-more" for="more-text-toggle-3">
+                              <span>Read more</span>
+                              <span>Read less</span>
+                            </label>
+                            <div class="text-content short-text">
+                               <p> Established by Law No. 7141 published in the Official Gazette No. 30425 dated May 18, 2018, our University is under the authority of Decree No. 124 on the Administrative Organization of Higher Education Institutions and Higher Education Institutions 31. within the scope of the article, it was established under the control and coordination of the General Secretariat.<br> </p>
+                            <ol style="list-style: circle;">
+                              <p><strong>Areas of Responsibility of the Student Affairs Department :</strong></p>
+                              <li>
+                                <p>To carry out the necessary works related to the new registration, admission and course status of the students,</p>
+                              </li>
+                              <li>
+                                <p>Graduation, identity, scholarship,</p>
+                              </li>
+                              <li>
+                                <p>
+                                  To carry out the monitoring of graduates, to perform other similar tasks to be given.
+                                </p>
+                              </li>
+                            </ol>
+                              </div>
+                          </div>
+                     </li>
+                      </ul>
+                  
+                      </div>
+                     </div>
+           </div>
+           
+           <div class="row">
+            <div class="col-12">
+           <footer>
+               <p class="footer">2023 © All rights reserved. Eskişehir Technical University <br>
+                Made by Ayşenur YAYLACI</p>
+           </footer>
+            </div>
+            </div>
+                       </div>
+                       
+                 
+       </div>
+
+</body>
+</html>
